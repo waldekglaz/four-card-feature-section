@@ -44,7 +44,7 @@ $fontBold: 600;
             padding: 1.5rem;
             border-top: 4px solid $colorCyan;
             margin-bottom: 2rem;
-            box-shadow: 1px 1px 20px $colorGrayBlue;
+            box-shadow: 2px 2px 25px $colorGrayBlue;
     
             h2{
                 color: $colorDarkBlue;
@@ -66,4 +66,24 @@ $fontBold: 600;
         }
     }
     
+}
+
+@media(min-width:1440px){
+    .technology{
+       max-width: 1500px;
+       margin:0 auto;
+       .technology__title, p{
+           width: 40%;
+           margin:0 auto ;
+       }
+       .cards__container{
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: wrap;
+           align-items: center;
+           .column__1, .column__2, .column__3{
+               flex-basis: 30%;
+           }
+       }
+    }
 }
