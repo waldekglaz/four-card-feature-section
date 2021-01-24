@@ -1,0 +1,69 @@
+// Variables
+$colorRed: hsl(0, 78%, 62%);
+$colorCyan: hsl(180, 62%, 55%);
+$colorOrange: hsl(34, 97%, 64%);
+$colorBlue:hsl(212, 86%, 64%);
+$colorGrayBlue:hsl(229, 6%, 66%);
+$colorDarkBlue:hsl(234, 12%, 34%);
+$colorLightGray:hsl(0, 0%, 98%);
+// Typo
+$fontFamily: 'Poppins', sans-serif;
+$fontSize: 15px;
+$fontLight: 200;
+$fontRegular: 400;
+$fontBold: 600;
+
+// Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Section technology
+.technology{
+    font-size: $fontSize;
+    text-align: center;
+    padding: 4rem 2.5rem;
+    font-family: $fontFamily;
+    font-weight: $fontRegular;
+    color: $colorGrayBlue;
+    .technology__title{
+        color: $colorDarkBlue;
+        margin-bottom: 1.5rem;
+        .technology__title--light{
+            font-weight: $fontLight;
+        }
+    }
+    
+    .cards__container{
+        margin: 4rem 0;
+        .card{
+            text-align: left;
+            border-radius: 4px;
+            padding: 1.5rem;
+            border-top: 4px solid $colorCyan;
+            margin-bottom: 2rem;
+            box-shadow: 1px 1px 20px $colorGrayBlue;
+    
+            h2{
+                color: $colorDarkBlue;
+            }
+            img{
+                display: block;
+                width: 20%;
+                margin:1rem 0 0 auto;
+            }
+        }
+        #card__team{
+            border-color: $colorRed;
+        }
+        #card__karma{
+            border-color: $colorOrange;
+        }
+        #card__calc{
+            border-color: $colorBlue;
+        }
+    }
+    
+}
